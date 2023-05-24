@@ -22,7 +22,7 @@ app.use(cors());
 // here we are calling the database connection function
 connection();
 
-app.use("./", require("./routes/routes.js"));
+app.use("/api", require("./routes/routes.js"));
 
 app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 
